@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn12"
+        android:layout_alignParentTop="true"
+        android:gravity="end"
+        android:textAlignment="viewEnd"
+        android:padding="15dp"
+        android:text="0"
+        android:textSize="70sp" />
+    <Button
+        android:id="@+id/btn12"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/cont_num"
+        android:text="C"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/cont_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+        <TableLayout
+            android:layout_weight="3"
+            android:id="@+id/tabla"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+        <LinearLayout
+            android:id="@+id/operaciones"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
